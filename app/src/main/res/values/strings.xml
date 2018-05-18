@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Frontpage</string>
+    <string name="title_activity_login">login</string>
+    <string name="title_activity_second">Second</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_nav">NavActivity</string>
+    <string name="title_activity_fouth_page">FouthPage</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
