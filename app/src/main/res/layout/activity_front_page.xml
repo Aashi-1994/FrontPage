@@ -33,8 +33,6 @@
         android:lineSpacingExtra="8sp"
         android:text="Player Login1"
         android:textSize="12sp"
-
-
         android:visibility="visible" />
 
     <Button

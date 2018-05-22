@@ -4,11 +4,11 @@
     android:layout_height="match_parent">
 
 
-    <TextureView
+    <TextView
         android:id="@+id/textureView"
-        android:layout_width="357dp"
-        android:layout_height="117dp"
-        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Hello"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp" />
+        android:layout_marginTop="14dp"/>
 </RelativeLayout>
