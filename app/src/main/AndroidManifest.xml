@@ -43,6 +43,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".LocationActivity" />
+        <activity android:name=".FilterLocation" />
+        <activity android:name=".GallerySlider">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Home1" />
+        <activity
+            android:name=".LocationFilter"
+            android:label="@string/title_activity_location_filter"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>

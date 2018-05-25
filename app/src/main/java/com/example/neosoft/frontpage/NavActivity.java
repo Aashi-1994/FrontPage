@@ -22,37 +22,15 @@ import android.widget.TextView;
 
 public class NavActivity extends AppCompatActivity {
 
-    int[] IMAGES = {R.drawable.img1, R.drawable.img2,R.drawable.img3,R.drawable.img4};
-    String[] NAMES = {"Ashi Singh","Prachi singh", "Nayan singh","Ankit  Singh"};
-    String[] DESCRIPTION = {"Actor", "Freedom Fightter","Sports","Scientist"};
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nav);
-
-//        ListView listView= (ListView) findViewById(R.id.listView);
-//        CustomerAdapter customerAdapter  = new CustomerAdapter();
-//        listView.setAdapter(customerAdapter);
-
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Main title");
         getSupportActionBar().setIcon(R.drawable.ic_keyboard_arrow_down_black_24dp);
         toolbar.setSubtitle("sub title ");
-
-`      Item item = (ClipData.Item) findViewById(R.id.item2);
-        item.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new  Intent (NavActivity.this, IconActivity.class);
-                startActivity(intent);
-            }
-        });
-
-
-
-
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
 
@@ -84,47 +62,5 @@ public class NavActivity extends AppCompatActivity {
                     return true;
                 }
             };
-
-
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        MenuInflater inflater = getMenuInflater();
-//        inflater.inflate(R.menu.example_menu, menu);
-//        return true;
-//    }
-
-//    class  CustomerAdapter extends BaseAdapter{
-//
-//        @Override
-//        public int getCount() {
-//            return IMAGES.length;
-//        }
-//
-//        @Override
-//        public Object getItem(int position) {
-//            return null;
-//        }
-//
-//        @Override
-//        public long getItemId(int position) {
-//            return 0;
-//        }
-//
-//        @Override
-//        public View getView(int i, View view, ViewGroup viewGroup) {
-//
-//            view = getLayoutInflater().inflate(R.layout.customlayout,null);
-//            ImageView imageView =(ImageView)view.findViewById(R.id.imageView);
-//            TextView textView_name =(TextView)view.findViewById(R.id.textView_name);
-//            TextView  textView_description =(TextView)view.findViewById(R.id.textView_description);
-//
-//            imageView.setImageResource(IMAGES[i]);
-//            textView_name.setText(NAMES[i]);
-//            textView_description.setText(DESCRIPTION[i]);
-//
-//            return view;
-//
-//
-//        }
-//    }
 
 }
